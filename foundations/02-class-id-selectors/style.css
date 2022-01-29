@@ -1,0 +1,19 @@
+.basic {
+    background-color: hsl(2, 77%, 67%);
+    font-family: Verdana, "Dejavu Sans", sans-serif;
+}
+
+#two {
+    color: #0004ff;
+    font-size: 36px;
+}
+
+#four {
+    background-color: rgb(41, 201, 41);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.upgrade {
+    font-size: 24px;
+}
