@@ -1,0 +1,18 @@
+.one {
+    background-color: rgb(8, 5, 5);
+    color: rgb(245, 231, 231);
+}
+
+.two {
+    background-color: #e9e925;
+}
+
+button {
+    font-size: 28px;
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+}
+
+/* i misunderstood the prompt here it was asking me to do 
+.one, .two {
+    font-size: 28px; etc not using the element (not using button.) */
+    
