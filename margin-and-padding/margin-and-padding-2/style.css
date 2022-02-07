@@ -4,24 +4,54 @@ body {
 }
 
 .card {
+  
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px;
+  
 }
 
 .title {
   background: #e3f4ff;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  padding: 5px;
+ 
 }
 
 .content {
   background: #e3f4ff;
+  margin-bottom: 8px;
+  padding:  14px 8px;
+
+  
 }
 
 .button-container {
   background: #e3f4ff;
+ 
+  
+  text-align: center;
+  padding: 8px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  margin: 0 auto;
+  display: block;
+  padding: 3px 16px;
 }
+
+/** had my own solution which included 
+border-top: 5px solid rgb(255, 255, 255); title
+border-bottom: 8px solid rgb(255, 255, 255); .button-container
+making my own white lines and what not because i didnt realize you could put padding
+into the .card section besides values which arent very important that was
+the location i differed, it was A solution but as it involved more lines of
+code for the same job im going to assume its the innefficient solution.
+either way it was a workaround and an idea and those are cool cheers future you. (it
+began to mimic the official solution after tinkering and seeing why mine differed
+i did not copyyyy (thats to anyone who peeks!) **/
