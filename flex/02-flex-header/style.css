@@ -1,6 +1,9 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -14,6 +17,8 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+display: flex;
+padding: 1px;
 }
 
 a {
@@ -22,4 +27,12 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+  display: flex;
+  margin: 10px;
 }
+
+/* this code result is similar to what they wanted, however there is a simpler
+solution. if you from here add 8px padding to header,
+add margin 0 to ul, add gap 8px to ul, and remove display flex
+and margin 10px from a. This achieves something very similar but in a 
+better format, though is 1 more line of code. */
