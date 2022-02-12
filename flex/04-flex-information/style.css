@@ -10,6 +10,23 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.barberry, .chilli, .pepper, .saffron {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 200px;
+  text-align: center;
+  align-items: center;
 }
 
 /* do not edit this footer */
@@ -24,3 +41,10 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* my solution felt good to write and the flow was solid
+but the provided solution is simpler, mine took 11 lines
+of code theirs took 6, main thing is  could have put
+text align on body instaed of making title a flex, 
+but overall i think what i did is fine, if a 
+little inneficient. */
