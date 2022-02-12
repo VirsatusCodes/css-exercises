@@ -12,6 +12,8 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  padding: 8px;
 }
 
 .profile-image {
@@ -45,4 +47,27 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+ gap: 16px;
 }
+
+.left{
+  display: flex;
+  flex:auto;
+  justify-content: space-between;
+  align-items: center;
+flex-flow: nowrap;
+  }
+
+.right{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+flex: auto;
+gap: 16px;
+}
+
+/* again mine is different but achieves the
+desired affect. must remember to deal with 
+margin and padding in ul, make use of the main
+container more. */
