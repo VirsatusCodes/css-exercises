@@ -2,27 +2,78 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+ul, a {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 24px;
+  display: flex;
+  flex-flow: column nowrap;
+  color: white;
+  padding: 0;
+  margin: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  max-width: 300px;
+  padding: 20px;
 }
+.middle {
+ display: flex;
+ flex:1;
+}
+
+.content{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 50px;
+  gap: 30px
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+/* note to self, start aligning css in the order of the content itself
+by the time of completion at least. aka header at top footer info
+at bot. margin bottom on "li" was what i struggled with the most here,
+i had my own solution for spacing but i struggled to make theirs work.
+it appears usually my biggest difference at this point is how i use
+padding and margin and where/when i apply it. i should start seperating
+ul and a also probably. despite my difference in padding and margin
+it gets the job done and the usage of those as far as i can tell right
+now are merely preference so as long as i continue to understand them
+and am able to use them as requested i can do w.e. */
