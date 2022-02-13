@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px ; /* didnt do side padding, shoulda been 16px, woulda been good.*/
 }
 
 input {
@@ -25,3 +28,43 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer{
+background-color: rgb(223, 222, 222);
+}
+
+ul, a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(71, 71, 71);
+  display: flex;
+}
+
+/* my "ul, a" section was actually a little more efficient, it can
+be combined as there is no negative overlap in THIS example.
+that may not ALWAYS be the case but here i did well, self pat on back! */
+
+.left-links, .right-links{
+  gap: 15px;
+  padding: 18px;
+}
+
+.content{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* only real thing they did different otherwise is the padding was done in the
+".header, .footer" section instead of left links and right links like i did,
+also gap was put into ul instead of how i did it in the links area.
+this is a little more efficient on their part and is good to keep in mind.*/
